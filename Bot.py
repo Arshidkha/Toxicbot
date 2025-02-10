@@ -5,11 +5,6 @@ import openai
 import wikipedia
 from langdetect import detect
 
-# ✅ **Bot Configuration**
-BOT_TOKEN = "7836410584:AAEPc28SLyE92DFqo8iyO45LKAwUpYHSV6Q"
-OPENAI_KEY = "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"
-GROUP_LINK = "https://t.me/+H4TLyLB0TBM0NzY9"
-
 # 🔹 OpenAI API Key Set करना
 openai.api_key = OPENAI_KEY
 
