@@ -4,6 +4,16 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import openai
 import wikipedia
 from langdetect import detect
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import CommandHandler, CallbackContext
+
+# ✅ Support Group Link
+SUPPORT_GROUP_LINK = "https://t.me/+H4TLyLB0TBM0NzY9"
+
+async def support(update: Update, context: CallbackContext):
+    keyboard = [[InlineKeyboardButton("🔗 Join Support Group", url=SUPPORT_GROUP_LINK)]]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await update.message.reply_text("⚡ **Need Help? Join our Support Group!**", reply_markup=reply_markup)
 
 # 🔹 OpenAI API Key Set करना
 openai.api_key = OPENAI_KEY
