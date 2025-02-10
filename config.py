@@ -1,0 +1,8 @@
+# Telegram Bot Token
+BOT_TOKEN = "7836410584:AAEPc28SLyE92DFqo8iyO45LKAwUpYHSV6Q"
+
+# OpenAI API Key
+OPENAI_KEY = "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"
+
+# Owner/Group ID
+OWNER_ID = -1002454141813
